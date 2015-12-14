@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_vIf6oJRUEeWw1L-rzi6ETQ" name="RootElement">
+  <packagedElement xmi:type="uml:Component" xmi:id="_FVC2QJd_EeWhI_5jHAGShA" name="Bank">
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_1l8lcJhVEeWhI_5jHAGShA" client="_FVC2QJd_EeWhI_5jHAGShA" supplier="_pqb68Jd_EeWhI_5jHAGShA" contract="_pqb68Jd_EeWhI_5jHAGShA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_pqb68Jd_EeWhI_5jHAGShA" name="Payment"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_IpdbQJepEeWhI_5jHAGShA" name="Login"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_kAXWMJhSEeWhI_5jHAGShA" name="Booking Handler"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_VfJdkJhUEeWhI_5jHAGShA" name="Database Handler"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_ZMljMJhVEeWhI_5jHAGShA" client="_VfJdkJhUEeWhI_5jHAGShA" supplier="_vIf6oJRUEeWw1L-rzi6ETQ"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_amfTMJhGEeWhI_5jHAGShA" name="Customer">
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_sbxkUJmnEeWzarNDD78uig" client="_amfTMJhGEeWhI_5jHAGShA" supplier="_pqb68Jd_EeWhI_5jHAGShA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_XfFPUJmkEeWzarNDD78uig" name="Statistics analysis">
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_WU5MwJmnEeWzarNDD78uig" name="Require data" client="_XfFPUJmkEeWzarNDD78uig" supplier="_VfJdkJhUEeWhI_5jHAGShA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_CAIowJenEeWhI_5jHAGShA" name="Database">
+    <generalization xmi:type="uml:Generalization" xmi:id="_HPqoIJmpEeWzarNDD78uig" general="_IpdbQJepEeWhI_5jHAGShA"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_ZIIrkJhWEeWhI_5jHAGShA" client="_CAIowJenEeWhI_5jHAGShA" supplier="_VfJdkJhUEeWhI_5jHAGShA" contract="_VfJdkJhUEeWhI_5jHAGShA"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_LaYnAJmnEeWzarNDD78uig" client="_CAIowJenEeWhI_5jHAGShA" supplier="_kAXWMJhSEeWhI_5jHAGShA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_lfoKwJeoEeWhI_5jHAGShA" name="Staff">
+    <generalization xmi:type="uml:Generalization" xmi:id="_M48PsJmnEeWzarNDD78uig" general="_kAXWMJhSEeWhI_5jHAGShA"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_OcmI4JmpEeWzarNDD78uig" client="_lfoKwJeoEeWhI_5jHAGShA" supplier="_IpdbQJepEeWhI_5jHAGShA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_O1PkUJmnEeWzarNDD78uig" client="_vIf6oJRUEeWw1L-rzi6ETQ" supplier="_VfJdkJhUEeWhI_5jHAGShA"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_gATlUJmrEeWzarNDD78uig" client="_amfTMJhGEeWhI_5jHAGShA" supplier="_vIf6oJRUEeWw1L-rzi6ETQ _kAXWMJhSEeWhI_5jHAGShA"/>
+</uml:Model>

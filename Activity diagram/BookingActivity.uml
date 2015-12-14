@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_LMCCwJIkEeWEsM3NSKzviw" name="RootElement">
+  <packagedElement xmi:type="uml:Activity" xmi:id="_LOoDwJIkEeWEsM3NSKzviw" name="Ca" node="_jDhyAJKVEeWO5-csm1bnjw _2hJL0JKWEeWO5-csm1bnjw _PeJb8JKXEeWO5-csm1bnjw _4EoiYJKXEeWO5-csm1bnjw _RAKL0JKYEeWO5-csm1bnjw _TFPB8JKYEeWO5-csm1bnjw _4OGK8JKYEeWO5-csm1bnjw _SuVIYJKZEeWO5-csm1bnjw _vN98UJKaEeWO5-csm1bnjw _OPn2gJKbEeWO5-csm1bnjw _m-QTcJKbEeWO5-csm1bnjw _IkWgUJKcEeWO5-csm1bnjw _iXhJIJKsEeWm3NYH-2QVQA _yrJvsJKsEeWm3NYH-2QVQA _m0AQoJKuEeWm3NYH-2QVQA _YRgRsJLIEeWiebeKZh9nZQ _7MoiYJLJEeWiebeKZh9nZQ _v2lqoJLeEeWutbl09HIRdg">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_7q1pgJKWEeWO5-csm1bnjw" target="_YRgRsJLIEeWiebeKZh9nZQ" source="_jDhyAJKVEeWO5-csm1bnjw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_YgN5YJKXEeWO5-csm1bnjw" target="_PeJb8JKXEeWO5-csm1bnjw" source="_2hJL0JKWEeWO5-csm1bnjw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_IXhiEJKYEeWO5-csm1bnjw" target="_4EoiYJKXEeWO5-csm1bnjw" source="_PeJb8JKXEeWO5-csm1bnjw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_kXDIAJKYEeWO5-csm1bnjw" name="Basic room selected" target="_RAKL0JKYEeWO5-csm1bnjw" source="_4EoiYJKXEeWO5-csm1bnjw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_ofVzEJKYEeWO5-csm1bnjw" name="Suite selected" target="_TFPB8JKYEeWO5-csm1bnjw" source="_4EoiYJKXEeWO5-csm1bnjw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_MCil0JKZEeWO5-csm1bnjw" target="_4OGK8JKYEeWO5-csm1bnjw" source="_RAKL0JKYEeWO5-csm1bnjw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_NmYXIJKZEeWO5-csm1bnjw" target="_4OGK8JKYEeWO5-csm1bnjw" source="_TFPB8JKYEeWO5-csm1bnjw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_nNMj0JKaEeWO5-csm1bnjw" target="_SuVIYJKZEeWO5-csm1bnjw" source="_4OGK8JKYEeWO5-csm1bnjw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_xfWJEJKaEeWO5-csm1bnjw" name="[Addtional services are saved]" target="_vN98UJKaEeWO5-csm1bnjw" source="_SuVIYJKZEeWO5-csm1bnjw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_P6NJAJKbEeWO5-csm1bnjw" name="Check personal information" target="_OPn2gJKbEeWO5-csm1bnjw" source="_vN98UJKaEeWO5-csm1bnjw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_YevV4JKbEeWO5-csm1bnjw" target="_vN98UJKaEeWO5-csm1bnjw" source="_OPn2gJKbEeWO5-csm1bnjw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_5y3B8JKbEeWO5-csm1bnjw" target="_m-QTcJKbEeWO5-csm1bnjw" source="_OPn2gJKbEeWO5-csm1bnjw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_pxL4oJKcEeWO5-csm1bnjw" name="Validate payment details" target="_IkWgUJKcEeWO5-csm1bnjw" source="_m-QTcJKbEeWO5-csm1bnjw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_xAILkJKcEeWO5-csm1bnjw" name="[Invalid information]" target="_m-QTcJKbEeWO5-csm1bnjw" source="_IkWgUJKcEeWO5-csm1bnjw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_mCp-IJKsEeWm3NYH-2QVQA" name="[Valid bank card]" target="_iXhJIJKsEeWm3NYH-2QVQA" source="_IkWgUJKcEeWO5-csm1bnjw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_1nxcYJKtEeWm3NYH-2QVQA" name="Finalize Payment" target="_yrJvsJKsEeWm3NYH-2QVQA" source="_IkWgUJKcEeWO5-csm1bnjw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_8wytgJKtEeWm3NYH-2QVQA" name="Register payment option" target="_yrJvsJKsEeWm3NYH-2QVQA" source="_iXhJIJKsEeWm3NYH-2QVQA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_ohXxYJKuEeWm3NYH-2QVQA" name="[Return booking information]" target="_m0AQoJKuEeWm3NYH-2QVQA" source="_yrJvsJKsEeWm3NYH-2QVQA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_OZ9IUJLJEeWiebeKZh9nZQ" target="_2hJL0JKWEeWO5-csm1bnjw" source="_YRgRsJLIEeWiebeKZh9nZQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_-QJ9wJLJEeWiebeKZh9nZQ" name="Cancel booking" target="_7MoiYJLJEeWiebeKZh9nZQ" source="_vN98UJKaEeWO5-csm1bnjw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_x38eYJLeEeWutbl09HIRdg" name="Cancels payment" target="_v2lqoJLeEeWutbl09HIRdg" source="_m-QTcJKbEeWO5-csm1bnjw"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_jDhyAJKVEeWO5-csm1bnjw" name="" outgoing="_7q1pgJKWEeWO5-csm1bnjw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_2hJL0JKWEeWO5-csm1bnjw" name="Select Dates" incoming="_OZ9IUJLJEeWiebeKZh9nZQ" outgoing="_YgN5YJKXEeWO5-csm1bnjw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_PeJb8JKXEeWO5-csm1bnjw" name="Select room types" incoming="_YgN5YJKXEeWO5-csm1bnjw" outgoing="_IXhiEJKYEeWO5-csm1bnjw"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_4EoiYJKXEeWO5-csm1bnjw" name="Display available rooms for specific dates" incoming="_IXhiEJKYEeWO5-csm1bnjw" outgoing="_kXDIAJKYEeWO5-csm1bnjw _ofVzEJKYEeWO5-csm1bnjw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_RAKL0JKYEeWO5-csm1bnjw" name="System Retrives Basic room" incoming="_kXDIAJKYEeWO5-csm1bnjw" outgoing="_MCil0JKZEeWO5-csm1bnjw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_TFPB8JKYEeWO5-csm1bnjw" name="System retrives Suite" incoming="_ofVzEJKYEeWO5-csm1bnjw" outgoing="_NmYXIJKZEeWO5-csm1bnjw"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_4OGK8JKYEeWO5-csm1bnjw" name="Room selected" incoming="_MCil0JKZEeWO5-csm1bnjw _NmYXIJKZEeWO5-csm1bnjw" outgoing="_nNMj0JKaEeWO5-csm1bnjw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_SuVIYJKZEeWO5-csm1bnjw" name="Add addtional services" incoming="_nNMj0JKaEeWO5-csm1bnjw" outgoing="_xfWJEJKaEeWO5-csm1bnjw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_vN98UJKaEeWO5-csm1bnjw" name="Add personal information" incoming="_xfWJEJKaEeWO5-csm1bnjw _YevV4JKbEeWO5-csm1bnjw" outgoing="_P6NJAJKbEeWO5-csm1bnjw _-QJ9wJLJEeWiebeKZh9nZQ"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_OPn2gJKbEeWO5-csm1bnjw" name="[Invalid information]" incoming="_P6NJAJKbEeWO5-csm1bnjw" outgoing="_YevV4JKbEeWO5-csm1bnjw _5y3B8JKbEeWO5-csm1bnjw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_m-QTcJKbEeWO5-csm1bnjw" name="Enter payment details" incoming="_5y3B8JKbEeWO5-csm1bnjw _xAILkJKcEeWO5-csm1bnjw" outgoing="_pxL4oJKcEeWO5-csm1bnjw _x38eYJLeEeWutbl09HIRdg"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_IkWgUJKcEeWO5-csm1bnjw" name="" incoming="_pxL4oJKcEeWO5-csm1bnjw" outgoing="_xAILkJKcEeWO5-csm1bnjw _mCp-IJKsEeWm3NYH-2QVQA _1nxcYJKtEeWm3NYH-2QVQA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_iXhJIJKsEeWm3NYH-2QVQA" name="Pay at hotel" incoming="_mCp-IJKsEeWm3NYH-2QVQA" outgoing="_8wytgJKtEeWm3NYH-2QVQA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_yrJvsJKsEeWm3NYH-2QVQA" name="Confirm Booking" incoming="_1nxcYJKtEeWm3NYH-2QVQA _8wytgJKtEeWm3NYH-2QVQA" outgoing="_ohXxYJKuEeWm3NYH-2QVQA"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_m0AQoJKuEeWm3NYH-2QVQA" name="Main flow ends" incoming="_ohXxYJKuEeWm3NYH-2QVQA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_YRgRsJLIEeWiebeKZh9nZQ" name="System prompts user to select desired dates and room type for the stay" incoming="_7q1pgJKWEeWO5-csm1bnjw" outgoing="_OZ9IUJLJEeWiebeKZh9nZQ"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_7MoiYJLJEeWiebeKZh9nZQ" name="" incoming="_-QJ9wJLJEeWiebeKZh9nZQ"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_v2lqoJLeEeWutbl09HIRdg" name="" incoming="_x38eYJLeEeWutbl09HIRdg"/>
+  </packagedElement>
+</uml:Model>
