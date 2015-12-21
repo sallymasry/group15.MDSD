@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel"
+    modelDirectory="/Activity diagram/src" modelPluginID="Activity_diagram"
+    modelName="Model" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.uml2.uml.ecore.importer" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
+    <details key="OPPOSITE_ROLE_NAMES" value="IGNORE"/>
+    <details key="DUPLICATE_FEATURES" value="DISCARD"/>
+    <details key="ANNOTATION_DETAILS" value="PROCESS"/>
+    <details key="PROPERTY_DEFAULT_EXPRESSIONS" value="IGNORE"/>
+    <details key="DUPLICATE_FEATURE_INHERITANCE" value="DISCARD"/>
+    <details key="COMMENTS" value="PROCESS"/>
+    <details key="DERIVED_FEATURES" value="PROCESS"/>
+    <details key="SUPER_CLASS_ORDER" value="PROCESS"/>
+    <details key="DUPLICATE_OPERATION_INHERITANCE" value="DISCARD"/>
+    <details key="REDEFINING_OPERATIONS" value="REPORT"/>
+    <details key="INVARIANT_CONSTRAINTS" value="PROCESS"/>
+    <details key="UNION_PROPERTIES" value="REPORT"/>
+    <details key="DUPLICATE_OPERATIONS" value="DISCARD"/>
+    <details key="NON_API_INVARIANTS" value="IGNORE"/>
+    <details key="CAMEL_CASE_NAMES" value="IGNORE"/>
+    <details key="SUBSETTING_PROPERTIES" value="REPORT"/>
+    <details key="OPERATION_BODIES" value="IGNORE"/>
+    <details key="ECORE_TAGGED_VALUES" value="PROCESS"/>
+    <details key="UNTYPED_PROPERTIES" value="REPORT"/>
+    <details key="REDEFINING_PROPERTIES" value="REPORT"/>
+    <details key="INVOCATION_DELEGATES" value="IGNORE"/>
+    <details key="VALIDATION_DELEGATES" value="IGNORE"/>
+  </genAnnotations>
+  <foreignModel>model.uml</foreignModel>
+  <genPackages xsi:type="genmodel:GenPackage" prefix="RootElement" disposableProviderFactory="true"
+      ecorePackage="RootElement.ecore#/">
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="RootElement.ecore#//Class1"/>
+    <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Classes" disposableProviderFactory="true"
+        ecorePackage="RootElement.ecore#//classes">
+      <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="External" disposableProviderFactory="true"
+          ecorePackage="RootElement.ecore#//classes/External">
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="RootElement.ecore#//classes/External/Payment">
+          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="RootElement.ecore#//classes/External/Payment/validatePayment"/>
+        </genClasses>
+      </nestedGenPackages>
+      <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Data" disposableProviderFactory="true"
+          ecorePackage="RootElement.ecore#//classes/Data">
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="RootElement.ecore#//classes/Data/Reservation">
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute RootElement.ecore#//classes/Data/Reservation/arrDate"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute RootElement.ecore#//classes/Data/Reservation/depDate"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute RootElement.ecore#//classes/Data/Reservation/resNr"/>
+          <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+              propertySortChoices="true" ecoreFeature="ecore:EReference RootElement.ecore#//classes/Data/Reservation/personDetails"/>
+          <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+              propertySortChoices="true" ecoreFeature="ecore:EReference RootElement.ecore#//classes/Data/Reservation/roommanage"/>
+          <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+              propertySortChoices="true" ecoreFeature="ecore:EReference RootElement.ecore#//classes/Data/Reservation/statisticshandler"/>
+          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="RootElement.ecore#//classes/Data/Reservation/addRoom"/>
+          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="RootElement.ecore#//classes/Data/Reservation/removeRoom"/>
+          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="RootElement.ecore#//classes/Data/Reservation/createRes"/>
+          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="RootElement.ecore#//classes/Data/Reservation/updateRes"/>
+          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="RootElement.ecore#//classes/Data/Reservation/removeRes"/>
+          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="RootElement.ecore#//classes/Data/Reservation/addPaymentDetails"/>
+          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="RootElement.ecore#//classes/Data/Reservation/edirRoom"/>
+          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="RootElement.ecore#//classes/Data/Reservation/validateResNr"/>
+        </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="RootElement.ecore#//classes/Data/RoomManage">
+          <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+              propertySortChoices="true" ecoreFeature="ecore:EReference RootElement.ecore#//classes/Data/RoomManage/roomDetails"/>
+          <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+              propertySortChoices="true" ecoreFeature="ecore:EReference RootElement.ecore#//classes/Data/RoomManage/roomdetails"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute RootElement.ecore#//classes/Data/RoomManage/checkinDate"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute RootElement.ecore#//classes/Data/RoomManage/checkoutDate"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute RootElement.ecore#//classes/Data/RoomManage/resNr"/>
+          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="RootElement.ecore#//classes/Data/RoomManage/createRoom">
+            <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="RootElement.ecore#//classes/Data/RoomManage/createRoom/room"/>
+          </genOperations>
+          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="RootElement.ecore#//classes/Data/RoomManage/updateRoom">
+            <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="RootElement.ecore#//classes/Data/RoomManage/updateRoom/room"/>
+          </genOperations>
+          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="RootElement.ecore#//classes/Data/RoomManage/removeRoom">
+            <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="RootElement.ecore#//classes/Data/RoomManage/removeRoom/room"/>
+          </genOperations>
+          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="RootElement.ecore#//classes/Data/RoomManage/getRoomInfo">
+            <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="RootElement.ecore#//classes/Data/RoomManage/getRoomInfo/roomNr"/>
+          </genOperations>
+          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="RootElement.ecore#//classes/Data/RoomManage/checkIn">
+            <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="RootElement.ecore#//classes/Data/RoomManage/checkIn/arrDate"/>
+            <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="RootElement.ecore#//classes/Data/RoomManage/checkIn/depDate"/>
+            <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="RootElement.ecore#//classes/Data/RoomManage/checkIn/resNr"/>
+          </genOperations>
+          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="RootElement.ecore#//classes/Data/RoomManage/CheckOut">
+            <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="RootElement.ecore#//classes/Data/RoomManage/CheckOut/resNr"/>
+          </genOperations>
+        </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="RootElement.ecore#//classes/Data/roomdetails">
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute RootElement.ecore#//classes/Data/roomdetails/bedsize"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute RootElement.ecore#//classes/Data/roomdetails/roomNr"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute RootElement.ecore#//classes/Data/roomdetails/price"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute RootElement.ecore#//classes/Data/roomdetails/Availbility"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute RootElement.ecore#//classes/Data/roomdetails/AccessCard"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute RootElement.ecore#//classes/Data/roomdetails/roomType"/>
+        </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="RootElement.ecore#//classes/Data/StaffDetails">
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute RootElement.ecore#//classes/Data/StaffDetails/firstName"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute RootElement.ecore#//classes/Data/StaffDetails/lastName"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute RootElement.ecore#//classes/Data/StaffDetails/phoneNr"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute RootElement.ecore#//classes/Data/StaffDetails/address"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute RootElement.ecore#//classes/Data/StaffDetails/Id"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute RootElement.ecore#//classes/Data/StaffDetails/pass"/>
+        </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="RootElement.ecore#//classes/Data/PaymentManagment">
+          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="RootElement.ecore#//classes/Data/PaymentManagment/isCardValid">
+            <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="RootElement.ecore#//classes/Data/PaymentManagment/isCardValid/paymentDetails"/>
+          </genOperations>
+        </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="RootElement.ecore#//classes/Data/StatisticsHandler">
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute RootElement.ecore#//classes/Data/StatisticsHandler/ReservationNr"/>
+          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="RootElement.ecore#//classes/Data/StatisticsHandler/fetchReservations"/>
+          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="RootElement.ecore#//classes/Data/StatisticsHandler/calculatePercentage"/>
+          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="RootElement.ecore#//classes/Data/StatisticsHandler/GenerateDiagram"/>
+        </genClasses>
+      </nestedGenPackages>
+      <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Business" disposableProviderFactory="true"
+          ecorePackage="RootElement.ecore#//classes/Business">
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="RootElement.ecore#//classes/Business/ReservationHandler">
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute RootElement.ecore#//classes/Business/ReservationHandler/arrDate"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute RootElement.ecore#//classes/Business/ReservationHandler/DepDate"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute RootElement.ecore#//classes/Business/ReservationHandler/ReservationNr"/>
+          <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+              propertySortChoices="true" ecoreFeature="ecore:EReference RootElement.ecore#//classes/Business/ReservationHandler/Person"/>
+          <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+              propertySortChoices="true" ecoreFeature="ecore:EReference RootElement.ecore#//classes/Business/ReservationHandler/Guests"/>
+          <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+              propertySortChoices="true" ecoreFeature="ecore:EReference RootElement.ecore#//classes/Business/ReservationHandler/roomhandler"/>
+          <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+              propertySortChoices="true" ecoreFeature="ecore:EReference RootElement.ecore#//classes/Business/ReservationHandler/reservation"/>
+          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="RootElement.ecore#//classes/Business/ReservationHandler/addRoom"/>
+          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="RootElement.ecore#//classes/Business/ReservationHandler/removeRoom"/>
+          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="RootElement.ecore#//classes/Business/ReservationHandler/addReservation"/>
+          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="RootElement.ecore#//classes/Business/ReservationHandler/updateReservation"/>
+          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="RootElement.ecore#//classes/Business/ReservationHandler/removeReservation"/>
+          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="RootElement.ecore#//classes/Business/ReservationHandler/EditRoom"/>
+        </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="RootElement.ecore#//classes/Business/roomHandler">
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute RootElement.ecore#//classes/Business/roomHandler/availability"/>
+          <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+              propertySortChoices="true" ecoreFeature="ecore:EReference RootElement.ecore#//classes/Business/roomHandler/roommanage"/>
+          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="RootElement.ecore#//classes/Business/roomHandler/checkavailability"/>
+        </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="RootElement.ecore#//classes/Business/CopyOf_Class1_1"/>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="RootElement.ecore#//classes/Business/AccountHandler">
+          <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+              propertySortChoices="true" ecoreFeature="ecore:EReference RootElement.ecore#//classes/Business/AccountHandler/staffinfo"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute RootElement.ecore#//classes/Business/AccountHandler/Id"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute RootElement.ecore#//classes/Business/AccountHandler/pass"/>
+          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="RootElement.ecore#//classes/Business/AccountHandler/ValidateStaffInfo">
+            <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="RootElement.ecore#//classes/Business/AccountHandler/ValidateStaffInfo/Id"/>
+            <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="RootElement.ecore#//classes/Business/AccountHandler/ValidateStaffInfo/pass"/>
+          </genOperations>
+        </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="RootElement.ecore#//classes/Business/PaymentHandler">
+          <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+              propertySortChoices="true" ecoreFeature="ecore:EReference RootElement.ecore#//classes/Business/PaymentHandler/paymentDetails"/>
+          <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+              propertySortChoices="true" ecoreFeature="ecore:EReference RootElement.ecore#//classes/Business/PaymentHandler/paymentmanagment"/>
+          <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+              propertySortChoices="true" ecoreFeature="ecore:EReference RootElement.ecore#//classes/Business/PaymentHandler/paymentdetails"/>
+          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="RootElement.ecore#//classes/Business/PaymentHandler/makePayment">
+            <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="RootElement.ecore#//classes/Business/PaymentHandler/makePayment/paymentsDetails"/>
+          </genOperations>
+        </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="RootElement.ecore#//classes/Business/PaymentDetails">
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute RootElement.ecore#//classes/Business/PaymentDetails/firstName"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute RootElement.ecore#//classes/Business/PaymentDetails/lastName"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute RootElement.ecore#//classes/Business/PaymentDetails/carsNr"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute RootElement.ecore#//classes/Business/PaymentDetails/ccv"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute RootElement.ecore#//classes/Business/PaymentDetails/expMonth"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute RootElement.ecore#//classes/Business/PaymentDetails/expYear"/>
+        </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="RootElement.ecore#//classes/Business/PersonInfo">
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute RootElement.ecore#//classes/Business/PersonInfo/irstName"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute RootElement.ecore#//classes/Business/PersonInfo/lastName"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute RootElement.ecore#//classes/Business/PersonInfo/adress"/>
+          <genFeatures xsi:type="genmodel:GenFeature" createChild="false" ecoreFeature="ecore:EAttribute RootElement.ecore#//classes/Business/PersonInfo/phoneNr"/>
+        </genClasses>
+      </nestedGenPackages>
+      <nestedGenPackages xsi:type="genmodel:GenPackage" prefix="Presentation" disposableProviderFactory="true"
+          ecorePackage="RootElement.ecore#//classes/presentation">
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="RootElement.ecore#//classes/presentation/authentication">
+          <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+              propertySortChoices="true" ecoreFeature="ecore:EReference RootElement.ecore#//classes/presentation/authentication/accounthandler"/>
+          <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+              propertySortChoices="true" ecoreFeature="ecore:EReference RootElement.ecore#//classes/presentation/authentication/staffui"/>
+          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="RootElement.ecore#//classes/presentation/authentication/logIn">
+            <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="RootElement.ecore#//classes/presentation/authentication/logIn/Id"/>
+            <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="RootElement.ecore#//classes/presentation/authentication/logIn/pass"/>
+          </genOperations>
+          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="RootElement.ecore#//classes/presentation/authentication/LogOut"/>
+        </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="RootElement.ecore#//classes/presentation/StaffUI">
+          <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+              propertySortChoices="true" ecoreFeature="ecore:EReference RootElement.ecore#//classes/presentation/StaffUI/reservationhandler"/>
+          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="RootElement.ecore#//classes/presentation/StaffUI/searchRoomType">
+            <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="RootElement.ecore#//classes/presentation/StaffUI/searchRoomType/roomType"/>
+            <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="RootElement.ecore#//classes/presentation/StaffUI/searchRoomType/price"/>
+            <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="RootElement.ecore#//classes/presentation/StaffUI/searchRoomType/arrvDate"/>
+            <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="RootElement.ecore#//classes/presentation/StaffUI/searchRoomType/depDate"/>
+          </genOperations>
+          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="RootElement.ecore#//classes/presentation/StaffUI/addRoom"/>
+          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="RootElement.ecore#//classes/presentation/StaffUI/deleteRoom"/>
+          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="RootElement.ecore#//classes/presentation/StaffUI/makeRes">
+            <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="RootElement.ecore#//classes/presentation/StaffUI/makeRes/customerInfo"/>
+          </genOperations>
+          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="RootElement.ecore#//classes/presentation/StaffUI/editRes">
+            <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="RootElement.ecore#//classes/presentation/StaffUI/editRes/resNr"/>
+          </genOperations>
+          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="RootElement.ecore#//classes/presentation/StaffUI/cancelRes"/>
+          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="RootElement.ecore#//classes/presentation/StaffUI/getResInfo">
+            <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="RootElement.ecore#//classes/presentation/StaffUI/getResInfo/resNr"/>
+          </genOperations>
+        </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" ecoreClass="RootElement.ecore#//classes/presentation/Customer">
+          <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+              propertySortChoices="true" ecoreFeature="ecore:EReference RootElement.ecore#//classes/presentation/Customer/reservationhandler"/>
+          <genFeatures xsi:type="genmodel:GenFeature" notify="false" createChild="false"
+              propertySortChoices="true" ecoreFeature="ecore:EReference RootElement.ecore#//classes/presentation/Customer/paymenthandler"/>
+          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="RootElement.ecore#//classes/presentation/Customer/searchRoomType"/>
+          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="RootElement.ecore#//classes/presentation/Customer/makeRes"/>
+          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="RootElement.ecore#//classes/presentation/Customer/editRes"/>
+          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="RootElement.ecore#//classes/presentation/Customer/cancelRes"/>
+          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="RootElement.ecore#//classes/presentation/Customer/getResInfo">
+            <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="RootElement.ecore#//classes/presentation/Customer/getResInfo/resNr"/>
+          </genOperations>
+          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="RootElement.ecore#//classes/presentation/Customer/getBill"/>
+          <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="RootElement.ecore#//classes/presentation/Customer/Operation1"/>
+        </genClasses>
+        <genClasses xsi:type="genmodel:GenClass" image="false" ecoreClass="RootElement.ecore#//classes/presentation/MainUI"/>
+      </nestedGenPackages>
+    </nestedGenPackages>
+  </genPackages>
+  <genPackages xsi:type="genmodel:GenPackage" prefix="Types" basePackage="org.eclipse.uml2"
+      disposableProviderFactory="true" ecorePackage="types.ecore#/">
+    <genDataTypes xsi:type="genmodel:GenDataType" ecoreDataType="types.ecore#//Boolean"/>
+    <genDataTypes xsi:type="genmodel:GenDataType" ecoreDataType="types.ecore#//Real"/>
+    <genDataTypes xsi:type="genmodel:GenDataType" ecoreDataType="types.ecore#//String"/>
+    <genDataTypes xsi:type="genmodel:GenDataType" ecoreDataType="types.ecore#//UnlimitedNatural"/>
+    <genDataTypes xsi:type="genmodel:GenDataType" ecoreDataType="types.ecore#//Integer"/>
+  </genPackages>
+</genmodel:GenModel>

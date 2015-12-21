@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated classes -->
+      <package
+            uri="http:///classes/External.ecore"
+            class="classes.External.ExternalPackage"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated classes -->
+      <package
+            uri="http:///classes/Data.ecore"
+            class="classes.Data.DataPackage"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated classes -->
+      <package
+            uri="http:///classes/Business.ecore"
+            class="classes.Business.BusinessPackage"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated classes -->
+      <package
+            uri="http:///classes/presentation.ecore"
+            class="classes.presentation.PresentationPackage"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated classes -->
+      <package
+            uri="http://www.eclipse.org/uml2/5.0.0/Types"
+            class="org.eclipse.uml2.types.TypesPackage"/>
+   </extension>
+
+</plugin>
